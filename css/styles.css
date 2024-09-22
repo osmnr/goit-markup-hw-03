@@ -1,15 +1,59 @@
-body {
-  font-family: "Roboto", sans-serif;
-  color: #434455;
-  background-color: #ffffff;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-.page-header {
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
+ol,ul {
+  list-style: none;
 }
+
+
+body {
+  width:99vw;
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+}
+
+img {
+  display: block;
+}
+
+header{
+  max-width:1440px;
+  height: 72px;
+  display:flex;
+  align-items:center;
+  text-align:center;
+  border-bottom: 1px solid #e7e9fc;
+  margin:auto;
+}
+
+main {
+  margin:auto;
+  max-width:1440px;
+}
+
+
+nav {
+  display:flex;
+  align-items:center;
+  text-align:center;
+  flex:2;
+}
+
+nav > a {
+flex:3;
+}
+
+nav > ul {
+display:flex;
+flex:5;
+}
+
 
 .navigation-site-logo {
   color: #4d5ae5;
@@ -24,6 +68,10 @@ body {
 
 .navigation-site-logo_studio {
   color: #2e2f42;
+}
+
+.navigation-pages-list{
+  gap:40px;
 }
 
 .navigation-list-items {
@@ -51,6 +99,11 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-style: normal;
+  flex:1;
+}
+.nav-addresses > ul {
+  display:flex;
+  gap:40px;
 }
 
 .nav-address-listItems {
@@ -72,9 +125,29 @@ body {
   color: #404bbf;
 }
 
+
+/* Section 1 - hero section */
+
+
 .hero-section {
   background-color: #2e2f42;
   color: #ffffff;
+  width:1440px;
+  height:600px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.page-header { 
+  margin: 0 auto;
+  width:496px;
+  height: 120px;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 
 .order-service-button {
@@ -86,6 +159,9 @@ body {
   line-height: 24px;
   letter-spacing: 0.04em;
   cursor: pointer;
+  width:169px;
+  height: 56px;
+  margin-top:35px;
 }
 
 .order-service-button:focus {
@@ -96,8 +172,33 @@ body {
   background-color: #404bbf;
 }
 
+
+/* Section 2 - features section */
+
+.features-section{
+  width:1440px;
+  height: 200px;
+  padding:100px 0;
+}
+
+
+.features-section > ul{
+  width:1128px;
+  height: 104px;
+  display:flex;
+  gap: 24px;
+  text-align:center;
+  align-items:center;
+  margin:auto;
+}
+
+.features-section > h2 {
+  visibility: hidden;
+}
 .feature-listItems {
   list-style-type: none;
+  flex:1;
+  
 }
 
 .feature-titles {
@@ -115,18 +216,28 @@ body {
   color: #434455;
 }
 
+
+
+/* Section 3 - Our team section */
+
+.our-team-section {
+  background-color: #f4f4fd;
+  width: 1440px;
+  padding:220px 0;
+}
+
+.our-team-section > ul {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:32px;
+  
+}
 .ourteam-list-items {
   list-style-type: none;
   background-color: #ffffff;
 }
 
-.porfolio-listItems {
-  list-style-type: none;
-}
-
-.our-team-section {
-  background-color: #f4f4fd;
-}
 
 .our-team-title {
   font-weight: 700;
@@ -136,6 +247,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 20px;
 }
 
 .associate-names {
@@ -153,10 +265,26 @@ body {
   letter-spacing: 0.02em;
 }
 
+
+
+
+
+/* Section 4 - Our Portfolio section */
+
+
+
 .portfolio-section {
-  background-color: #e7e9fc;
+  width:1128px;
+  margin:auto;
+  padding:220px 0;
 }
 
+.portfolio-section > ul {
+  display:flex;
+  flex-wrap:wrap;
+  gap:25px;
+  width:100%;
+}
 .portfolio-title {
   font-weight: 700;
   color: #2e2f42;
@@ -166,6 +294,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 20px;
 }
 
 .porfolio-solutions {
@@ -176,6 +305,11 @@ body {
   letter-spacing: 0.02em;
 }
 
+.porfolio-listItems {
+  list-style-type: none;
+  width:calc((200% - (4 * 25px)) / 6);
+}
+
 .porfolio-solution-genres {
   color: #434455;
   font-weight: 400;
@@ -184,9 +318,27 @@ body {
   letter-spacing: 0.02em;
 }
 
+
+
+
+/* Footer  */
+
+
+
 .page-footer {
   background-color: #2e2f42;
   color: #f4f4fd;
+  max-width:1440px;
+  margin:auto;
+  padding:80px 0;
+}
+
+.footer-container{
+  width: 1128px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
 }
 
 .footer-site-logo {
@@ -198,6 +350,7 @@ body {
   font-size: 18px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+ 
 }
 
 .footer-site-logo_studio {
@@ -207,4 +360,5 @@ body {
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
 }
