@@ -159,7 +159,7 @@ flex:5;
   padding: 188px 0;
 }
 
-.page-header1 { 
+.page-header-one { 
   margin: 0 auto;
   max-width: 496px;
   height: 120px;
@@ -231,6 +231,7 @@ flex:5;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .feature-texts {
@@ -247,21 +248,26 @@ flex:5;
 .our-team-section {
   background-color: #f4f4fd;
   width: 1440px;
-  padding:220px 0;
+  padding: 120px 0;
 }
 
-.our-team-section > ul {
+.our-team-list {
   display:flex;
   align-items:center;
   justify-content:center;
-  gap:32px;
+  gap: 24px;
   
 }
 .ourteam-list-items {
+  width: calc((100% - 72px) / 4);
   list-style-type: none;
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 
+.our-team-item-name-and-position {
+  padding: 32px 0;
+}
 
 .our-team-title {
   font-weight: 700;
@@ -271,15 +277,17 @@ flex:5;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  margin-bottom: 20px;
+  margin-bottom: 72px;
 }
 
 .associate-names {
+  text-align: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .associate-positions {
@@ -287,6 +295,7 @@ flex:5;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 
