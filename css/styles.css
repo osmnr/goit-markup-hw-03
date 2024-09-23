@@ -22,7 +22,14 @@ img {
   display: block;
 }
 
-header{
+.page-header{
+  max-width:1440px;
+  height: 72px;
+  border-bottom: 1px solid #e7e9fc;
+  margin:auto;
+}
+
+.header-container{
   max-width:1440px;
   height: 72px;
   display:flex;
@@ -32,24 +39,33 @@ header{
   margin:auto;
 }
 
+.container{
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+
 main {
   margin:auto;
   max-width:1440px;
 }
 
 
-nav {
+.navigation {
   display:flex;
   align-items:center;
   text-align:center;
   flex:2;
 }
 
-nav > a {
+.navigation> a {
 flex:3;
+margin-right: 76px;
 }
 
-nav > ul {
+.navigation > ul {
 display:flex;
 flex:5;
 }
@@ -71,7 +87,8 @@ flex:5;
 }
 
 .navigation-pages-list{
-  gap:40px;
+  gap: 40px;
+  display: flex;
 }
 
 .navigation-list-items {
@@ -79,6 +96,7 @@ flex:5;
   font-size: 16px;
   line-height: 24px;
   list-style-type: none;
+  padding: 24px 0;
 }
 
 .navigation-item-links {
@@ -101,7 +119,7 @@ flex:5;
   font-style: normal;
   flex:1;
 }
-.nav-addresses > ul {
+.address-list {
   display:flex;
   gap:40px;
 }
@@ -138,11 +156,12 @@ flex:5;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 188px 0;
 }
 
-.page-header { 
+.page-header1 { 
   margin: 0 auto;
-  width:496px;
+  max-width: 496px;
   height: 120px;
   font-size: 56px;
   line-height: 1.07;
@@ -159,9 +178,12 @@ flex:5;
   line-height: 24px;
   letter-spacing: 0.04em;
   cursor: pointer;
-  width:169px;
+  min-width: 169px;
   height: 56px;
+  display: block;
+  margin:0 auto;
   margin-top:35px;
+  border-radius: 4px;
 }
 
 .order-service-button:focus {
@@ -178,11 +200,11 @@ flex:5;
 .features-section{
   width:1440px;
   height: 200px;
-  padding:100px 0;
+  padding: 120px 0;
 }
 
 
-.features-section > ul{
+.feature-lists{
   width:1128px;
   height: 104px;
   display:flex;
@@ -192,10 +214,12 @@ flex:5;
   margin:auto;
 }
 
-.features-section > h2 {
+.visually-hidden {
   visibility: hidden;
 }
-.feature-listItems {
+
+.feature-list-items {
+  width: calc((100% - 72px) / 4);
   list-style-type: none;
   flex:1;
   

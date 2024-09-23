@@ -9,12 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link href="./css/styles.css" rel="stylesheet" >
   </head>
   <body>
 
-    <header>
-      <nav>
+    <header class="page-header">
+      <div class="header-container container">
+        
+      
+      <nav class="navigation">
         <a href="./index.html" class="navigation-site-logo"
           >Web <span class="navigation-site-logo_studio">Studio</span>
         </a>
@@ -31,7 +35,7 @@
         </ul>
       </nav>
       <address class="nav-addresses">
-        <ul>
+        <ul class="address-list">
           <li class="nav-address-listItems" >
             <a class="nav-address-a" href="mail:info@devstudio.com">info@devstudio.com</a>
           </li>
@@ -40,12 +44,13 @@
           </li>
         </ul>
       </address>
+    </div>
     </header>
 
     <main>
       <section class="hero-section">
-        <div class="hero-section-container">
-          <h1 class="page-header">Effective Solutions for Your Business</h1>
+        <div class="hero-section-container container">
+          <h1 class="page-header1">Effective Solutions for Your Business</h1>
           <button type="button" class="order-service-button">
           Order Service
         </button>
@@ -54,37 +59,39 @@
       </section>
       
       <section class="features-section">
-        <h2>This h2 title does not exist in figma</h2>
-        <ul>
-          <li class="feature-listItems">
-            <h3 class="feature-titles">Strategy</h3>
-            <p class="feature-texts">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li class="feature-listItems">
-            <h3 class="feature-titles">Punctuality</h3>
-            <p class="feature-texts">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li class="feature-listItems">
-            <h3 class="feature-titles">Diligence</h3>
-            <p class="feature-texts">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li class="feature-listItems">
-            <h3 class="feature-titles">Technologies</h3>
-            <p class="feature-texts">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
+        <div class="feature-container container">
+          <h2 class="visually-hidden">46</h2>
+          <ul class="feature-lists">
+            <li class="feature-list-items">
+              <h3 class="feature-titles">Strategy</h3>
+              <p class="feature-texts">
+                Our goal is to identify the business problem to walk away with the
+                perfect and creative solution.
+              </p>
+            </li>
+            <li class="feature-list-items">
+              <h3 class="feature-titles">Punctuality</h3>
+              <p class="feature-texts">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="feature-list-items">
+              <h3 class="feature-titles">Diligence</h3>
+              <p class="feature-texts">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="feature-list-items">
+              <h3 class="feature-titles">Technologies</h3>
+              <p class="feature-texts">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+      </div>
       </section>
 
       <section class="our-team-section">
