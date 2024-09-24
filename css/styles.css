@@ -322,12 +322,6 @@ flex:5;
   padding: 120px 0;
 }
 
-.porfolio-container{
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  margin-bottom: 8px;
-}
-
 .porfolio-list {
   display:flex;
   flex-wrap:wrap;
@@ -358,14 +352,13 @@ flex:5;
 
 .porfolio-list-items {
   list-style-type: none;
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
-.porfolio-name-and-genre {
+.portfolio-name-and-genre {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 
 
@@ -400,7 +393,8 @@ flex:5;
   gap:20px;
 }
 
-.footer-site-logo {
+.footer-site-logoo {
+  display: inline-block;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -409,7 +403,6 @@ flex:5;
   font-size: 18px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: inline-block;
   margin-bottom: 16px;
 }
 
