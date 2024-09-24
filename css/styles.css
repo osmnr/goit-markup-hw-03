@@ -377,43 +377,38 @@ flex:5;
 
 /* Footer  */
 
-
-
 .page-footer {
   background-color: #2e2f42;
-  color: #f4f4fd;
-  max-width:1440px;
-  margin:auto;
+  height: 312px;
+  top: 2988px;
   padding: 100px 0;
 }
 
 .footer-container{
-  width: 1128px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap:20px;
+  height: 122px;
+  top: 3088px;
+  left: 156px;
 }
 
 .footer-site-logoo {
-  display: inline-block;
-  color: #4d5ae5;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  line-height: 1.17;
+  color: #4d5ae5;
   text-decoration: none;
-  font-size: 18px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  display: inline-block;
   margin-bottom: 16px;
 }
 
 .footer-site-logo_studio {
+  font-family: "Raleway", sans-serif;
   color: #f4f4fd;
+  text-decoration: none;
 }
 
 .footer-text {
+  max-width: 264px;
+  color: #f4f4fd;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
-  width: 264px;
+  letter-spacing: 2%;
 }
